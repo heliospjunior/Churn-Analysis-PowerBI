@@ -1,15 +1,16 @@
 #Telco Customer Churn Analysis
 
-##Análise Estratégica de Retenção com Foco Comercial
+##Análise de Churn com Estruturação de Métricas e Priorização Comercial (Power BI)
 
 
 ###📌 **Contexto de Negócio:**
 
-Empresas com modelo de receita recorrente dependem fortemente da retenção de clientes para manter crescimento sustentável.
+Este projeto foi desenvolvido com foco em estruturar métricas confiáveis e orientadas a negócio para análise de churn em modelo de receita recorrente.
 
-Pequenas variações na taxa de churn podem gerar impactos significativos na receita anual.
-
-Este projeto simula um cenário de análise comercial focado em retenção de clientes, inspirado em empresas de serviços recorrentes como de assinaturas.
+O objetivo não foi apenas visualizar dados, mas:
+*  Modelar indicadores estratégicos
+* Criar lógica de priorização
+* Traduzir churn em impacto financeiro
 
 
 ###🎯 **Objetivos:**
@@ -24,91 +25,54 @@ Este projeto simula um cenário de análise comercial focado em retenção de cl
 
 
 
-###🛠️ **Tecnologias Utilizadas:**
-
-* Python
-
-* Pandas
-
-* Matplotlib
-
-* Seaborn
+O projeto foi estruturado em três camadas:
 
 
+##1 - Camada de Transformação
 
-###📈 **Principais Métricas Gerais:**
+* Tratamento de tipos de dados
+* Padronização da variável Churn
+* Criação de faixas de Ticket e Tenure
+* Organização de modelo analítico
 
-* Taxa geral de churn: 26,58%
+##2 - Camada de Métricas (DAX)
 
-* Receita mensal estimada: R$ 455.661,00
+###Criação de medidas robustas:
 
-* Receita anual perdida com churn: R$ 1.669.570,20
+* Total de Clientes
+* Taxa de Churn
+* Receita Perdida Mensal
+* Receita Perdida Anual
+* Participação percentual por segmento
+
+Todas as métricas foram estruturadas com uso adequado de CALCULATE, ALL e contexto de filtro.
+
+##3 - Camada de Priorização
+
+Desenvolvimento de um Score Heurístico de Risco considerando:
+
+* Ticket
+* Tempo de relacionamento
+* Tipo de contrato
+
+O score permitiu identificar concentração financeira de risco.
 
 
+###🔎 **Principais Resultados**
 
-###🔎 **Principais Insights**
+* 8,97% da base concentra 39,31% da receita perdida mensal.
+* Clientes de alto ticket, contrato mensal e até 1 ano representam o maior risco estrutural.
+* Simulação de redução de 10% nesse grupo indica potencial relevante de preservação de receita anual.
 
-**1️) Tipo de Contrato**
-
-* Clientes com contrato mensal apresentam taxa de churn significativamente superior aos contratos anuais.
-
-* Apesar de representarem 55% da base, concentram 87% da receita perdida mensal.
-
-Insight:
+**Insight:**
 Incentivar migração para contratos de maior prazo pode reduzir risco estrutural da base.
 
 
-**2️) Tempo de Relacionamento (Tenure)**
+## Ferramentas
 
-* Clientes com até 1 ano de relacionamento apresentam maior taxa de churn.
-
-* A taxa reduz progressivamente conforme o tempo de permanência aumenta.
-
-Insight:
-O período inicial do cliente é crítico para retenção. Estratégias de onboarding e acompanhamento precoce são essenciais.
+* Power BI
+* DAX
+* Modelagem Analítica
+* Business Analytics
 
 
-**3️) Ticket Médio (MonthlyCharges)**
-
-* Clientes de ticket Alto e Muito Alto apresentam as maiores taxas de churn.
-
-* Esses grupos concentram aproximadamente 79% da receita perdida mensal.
-
-Insight:
-O churn está impactando principalmente clientes de maior valor, aumentando o impacto financeiro da evasão.
-
-
-
-**4) Cruzamento Estratégico (Ticket + Tenure)**
-
-* Clientes de alto ticket com menos de 1 ano apresentam o maior risco.
-
-* Esse grupo representa parcela relevante da receita perdida.
-
-Insight:
-Retenção de clientes premium no primeiro ano deve ser prioridade comercial.
-
-
-
-###💰 Impacto Financeiro
-
-A concentração do churn em clientes de alto ticket indica que:
-
-* A redução de churn nesse segmento teria alto impacto financeiro.
-
-* Estratégias direcionadas podem gerar retorno significativo.
-
-
-
-
-###🎯 Perfil Prioritário de Retenção
-
-Com base na análise exploratória, o perfil de maior risco identificado foi:
-
-* Contrato mensal
-
-* Alto ou Muito Alto ticket
-
-* Até 1 ano de relacionamento
-
-** * Esse grupo deve ser foco prioritário de iniciativas comerciais.**
