@@ -1,9 +1,9 @@
-#Telco Customer Churn Analysis
+# Telco Customer Churn Analysis
 
-##Análise de Churn com Estruturação de Métricas e Priorização Comercial (Power BI)
+## Análise de Churn com Estruturação de Métricas e Priorização Comercial (Power BI)
 
 
-###📌 **Contexto de Negócio:**
+### 📌 **Contexto de Negócio:**
 
 Este projeto foi desenvolvido com foco em estruturar métricas confiáveis e orientadas a negócio para análise de churn em modelo de receita recorrente.
 
@@ -13,7 +13,7 @@ O objetivo não foi apenas visualizar dados, mas:
 * Traduzir churn em impacto financeiro
 
 
-###🎯 **Objetivos:**
+### 🎯 **Objetivos:**
 
 * Identificar fatores associados ao churn
 
@@ -28,16 +28,16 @@ O objetivo não foi apenas visualizar dados, mas:
 O projeto foi estruturado em três camadas:
 
 
-##1 - Camada de Transformação
+## 1 - Camada de Transformação
 
 * Tratamento de tipos de dados
 * Padronização da variável Churn
 * Criação de faixas de Ticket e Tenure
 * Organização de modelo analítico
 
-##2 - Camada de Métricas (DAX)
+## 2 - Camada de Métricas (DAX)
 
-###Criação de medidas robustas:
+### Criação de medidas robustas:
 
 * Total de Clientes
 * Taxa de Churn
@@ -47,7 +47,7 @@ O projeto foi estruturado em três camadas:
 
 Todas as métricas foram estruturadas com uso adequado de CALCULATE, ALL e contexto de filtro.
 
-##3 - Camada de Priorização
+## 3 - Camada de Priorização
 
 Desenvolvimento de um Score Heurístico de Risco considerando:
 
@@ -58,7 +58,7 @@ Desenvolvimento de um Score Heurístico de Risco considerando:
 O score permitiu identificar concentração financeira de risco.
 
 
-###🔎 **Principais Resultados**
+### 🔎 **Principais Resultados**
 
 * 8,97% da base concentra 39,31% da receita perdida mensal.
 * Clientes de alto ticket, contrato mensal e até 1 ano representam o maior risco estrutural.
